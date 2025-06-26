@@ -159,3 +159,8 @@ cython_debug/
 
 # Reference files
 docs/
+
+# Local test files
+*.jpg
+take_snapshot.py
+get_status.py

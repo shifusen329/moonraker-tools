@@ -70,3 +70,12 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+```
+
+## MCP Server
+
+This project includes an MCP server that exposes the agent tools for use by other applications. To run the server:
+
+```bash
+uv run moonraker-mcp
+```
