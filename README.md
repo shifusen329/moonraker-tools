@@ -1,6 +1,6 @@
 # Moonraker Tools
 
-A Python client for the Moonraker API, designed for AI agents.
+A Python client for the Moonraker API, designed for AI agents to manage 3D printers.
 
 ## Installation
 
