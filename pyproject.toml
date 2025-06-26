@@ -3,7 +3,7 @@ name = "moonraker_tools"
 version = "0.1.0"
 description = "A Python client for the Moonraker API, designed for AI agents."
 authors = [{ name = "Cline", email = "cline@example.com" }]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "httpx",
 ]
@@ -25,3 +25,16 @@ line-length = 88
 select = ["E", "F", "I"]
 
 [tool.pytest.ini_options]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moonraker_tools"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = [
+    ".",
+    "moonraker-mcp",
+]
