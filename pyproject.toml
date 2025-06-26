@@ -1,0 +1,27 @@
+[project]
+name = "moonraker_tools"
+version = "0.1.0"
+description = "A Python client for the Moonraker API, designed for AI agents."
+authors = [{ name = "Cline", email = "cline@example.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "httpx",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock",
+    "flask",
+    "dash",
+    "pytest-asyncio",
+    "python-dotenv",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
